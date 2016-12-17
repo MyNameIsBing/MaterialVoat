@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
 
 body {
-  font-family: 'Roboto', sans-serif;;
+  font-family: 'Roboto';
   background: #eee;
   color: rgba(0,0,0,0.87);
   box-sizing: border-box;
@@ -252,7 +252,7 @@ h2 {
   background: #ff1744
 }
 
-@media (max-width:1000px) {
+@media (max-width:900px) {
   #container {
     margin: 0;
     max-width: none;
