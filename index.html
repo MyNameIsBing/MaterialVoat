@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Example.com</title>
+    <link rel="stylesheet" href="master.css" type="text/css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>MaterialVoat</h1>
+        <title>Example</title>
+        <div id="bottombar">
+        </div>
+    </div>
+    <div id="container">
+        <p>MaterialVoat is a css theme for <a href="https://voat.co">Voat</a> which <i>sort of</i> follows
+            <a href="https://material.google.com/"></a>Google's Material design guidelines. This is still in development so there will be bugs. Please report any bugs you find <a href="[report link]">here</a>.</p>
+        <p></p>
+        <div class="downloads">
+            <h2>For subverse moderators</h2>
+            <p>You may use this in any subverse. My only request is that you give some sort of credit to <a href="https://voat.co/u/MyNameIsBing">me</a> or <a href="https://voat.co/v/MaterialVoat">the subverse</a> in your sidebar. This is not reqired, however.</p>
+            <a href="[download link]" class="downloadbutton">Download</a>
+            <h2>Installing on your subverse</h2>
+            <span>If you want to change the color of the CSS, the best way to do so is by using Ctrl + f and replacing them with the colors you want. Keep in mind, though you can use any color, it is best if you use ones from the
+        <a href="https://material.io/guidelines/style/color.html#color-color-palette">
+          material design color palette
+        </a>.
+        By default, the theme is set to
+        <div class="Blue500">
+          500 Blue #2196f3
+        </div> as the body color,
+        <div class="Blue800">
+          800 Blue #1565C0
+        </div>
+         as the status bar color, with
+         <div class="A700amber">
+           A700 Amber #ffab00
+         </div> and <div class="A400Amber">
+           A700 Amber #ffc400 (for hover)
+         </div>
+         as the accent color. For dark mode, the accent colors are
+         <div class="A700red">
+           A700 Red #d50000
+         </div>
+         and
+         <div class="A400red">
+           A400 Red #ff1744
+         </div>
+      </span>
+            <h2>Addons</h2>
+            <p>I have created a few addons for you. Feel free to submit your own to <a href="[subverse link]">the subverse</a>.</p>
+            <ul>
+                <li><h3>Header Image</h3></li>
+                <li>Just add this after the full css. You can then replace "http://imgur.com/FwxGrgy.png" with anything.</li><li> <textarea name="Header Image" rows="8" cols="40" class="headerimage">
+                #header {
+                	padding: 0 !important;
+                	height: 186px;
+                  background: url("http://imgur.com/FwxGrgy.png") 50% 50% / cover no-repeat !important;
+                	box-shadow: 0px 4px 5px rgba(0,0,0,0.2)
+                }
+
+                #container {
+                	top: 191px;
+                }
+
+                #header-banner {
+                	margin-top: 0 !important;
+                  margin-bottom: 0 !important;
+                }
+
+                .pagename {
+                	left: -231px;
+                	position: relative;
+                	top: -60px !important;
+                }
+                .tabmenu {
+                	margin-bottom: -10px;
+                	float: left;
+                	margin-left: 15px;
+                }
+
+                .tabmenu a {
+                	position: relative;
+                	bottom: -9px;
+                }
+
+                #sr-header-area, #sr-more-link, #header-account {
+                	background: rgba(0,0,0,0.37) !important;
+                }
+
+                #header-account {
+                	top: -104px !important;
+                }
+              </textarea></li>
+                <li><h3>Sticky Link</h3></li>
+                <li>Just add this after the full css. To use, add "#####[ANNOUNCEMENTTEXT](ANNOUNCEMENTLINK)" to your sidebar.</li>
+                <li><textarea name="StickyLink" rows="8" cols="80">
+                .side h5 > a {
+                	position: absolute;
+                	left: 10px;
+                	padding: 15px;
+                	text-decoration: none !important;
+                	background: #fff;
+                	border-radius: 2px;
+                	box-shadow: 0px 1px 4px rgba(0,0,0,0.14);
+                	right: 335px;
+                	top: 0;
+                	font-size: 20px;
+                	transition: .2s ease-in-out;
+                	z-index: 999999;
+                	font-style: normal
+                }
+
+                .side h3 > a:hover {
+                	box-shadow: 0px 2px 7px rgba(0,0,0,0.44)
+                }
+
+                .sitetable.linklisting:not(#siteTable) {
+                	margin-top: 70px
+                }
+              </textarea></li>
+              <li><h3>Side Link Button</h3></li>
+              <li>Just add this after the full css. To use, add "####[BUTTONTEXT](BUTTONLINK)" to your sidebar.</li>
+              <li><textarea name="name" rows="8" cols="80">
+              .side h4 > a {
+              	margin: 5px;
+              	background:#ffab00;
+              	border: none;
+              	padding: 10px;
+              	font-size: 14px;
+              	font-style: normal;
+              	text-align: center;
+              	font-size: 18px;
+              	color: #fff !important;
+              	border-radius: 2px;
+              	text-transform: capitalize;
+              	box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0 4px 0 rgba(0,0,0,.12);
+              	transition: .2s cubic-bezier(.4,0,1,1)
+              }
+
+              .side h4 > a:hover {
+              	background:#ffc400;
+              	box-shadow:0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2)
+              }
+            </textarea></li>
+            </ul>
+            <div id="userstyles" class="box">
+                <h2>For Userstyles</h2>
+                <a href="https://userstyles.org/styles/136530/materialvoat-dark-mode-compatable" class="downloadbutton">Install</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container">
+        <div id="footer">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            Feel free to use this on any subverse, free of charge, without contacting me first.
+            <br />
+            <span>Theme created by <a href="https://voat.co/u/MyNameIsBing">/u/MyNameIsBing</a> on voat.</span>
+            <br />
+            <span>Please don't bother me.</span>
+            <br />
+        </div>
+    </div>
+</body>
+
+</html>
