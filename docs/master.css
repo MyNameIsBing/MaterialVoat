@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
 
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;;
   background: #eee;
+  font-size: 1em;
   color: rgba(0,0,0,0.87);
   box-sizing: border-box;
   margin: 0;
@@ -13,9 +14,9 @@ body {
   z-index: 2;
   margin-bottom: 0;
   width: 100%;
-  position: relative;
-  top: 3px;
-  height: 48px;
+  position: absolute;
+  bottom: 0;
+  height: 2.5em;
   background:rgba(0,0,0,0.34)
 }
 
@@ -37,14 +38,14 @@ h2 {
   height: 100vh;
   width: 100%;
   position: relative;
-  margin-top: 20px;
+  margin-top: 1em;
   background: #556270;
 }
 
 #footer {
   max-width: 33.333vw;
   background: rgba(0,0,0,0.24);
-  padding: 15px;
+  padding: 1em;
   text-align: center;
   margin: auto;
   color: #fff;
@@ -55,9 +56,8 @@ h2 {
 }
 .features li {
   float: left;
-  margin: 15px;
+  margin: 0.5em;
   display: block;
-  margin: 7.5px;
   text-align: center;
 }
 
@@ -69,20 +69,19 @@ h2 {
   right: 0;
   z-index: 1;
   background: #2196f3;
-  height: 186px;
+  height: 10em;
   background: url("http://imgur.com/FwxGrgy.png") 50% 50% / cover no-repeat;
   box-shadow: 0px 4px 5px rgba(0,0,0,0.2)
 }
 
 #container {
-  padding: 15px;
-  border-radius: 2px;
+  padding: 1em;
+  border-radius: 0.07em;
   z-index: 0;
-  margin-top: 206px;
+  margin-top: 11em;
   max-width: 65vw;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
   background:#fff;
   box-shadow: 0px 1px 5px rgba(0,0,0,0.14);
   margin-bottom: 0px;
@@ -90,34 +89,29 @@ h2 {
 
 #header h1 {
   text-shadow: 0px 1px 8px rgba(0,0,0,0.14);
-  margin-top: 34px;
-  margin-left: 15px;
+  margin-top: 0.7em;
+  margin-left: 1em;
   vertical-align: middle;
   text-align: left;
   font-size-adjust: 1.1;
-  font-family: 'Roboto';
-}
-
-.maxwidthdownloadbutton {
-  text-align: center;
-  margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .downloadbutton {
 	background:#ff6b6b;
-	padding: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-	font-size: 22px;
+	padding: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+	font-size: 1.35em;
   text-align: center;
 	color: #fff;
   display: block;
   margin: auto;
   position: relative;
   bottom: 0;
-  max-width: 200px;
+  max-width: 9.4em;
   text-decoration: none;
-	border-radius: 2px;
+	border-radius: 0.07em;
 	box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0 4px 0 rgba(0,0,0,.12);
 	transition: .2s cubic-bezier(.4,0,1,1)
 }
@@ -135,45 +129,6 @@ li {
   list-style-type: none;
 }
 
-.screenshots li img {
-  border-radius: 2px;
-  border-color: #eee;
-  box-shadow: 0px 1px 5px rgba(0,0,0,0.14);
-  margin-bottom: 15px;
-  width: 100%;
-  height: 0 !important;
-  overflow: hidden;
-}
-
-#viewimg1, #viewimg2 {
-  display: none;
-}
-.hiddenimg {
-  height: 0 !important;
-}
-
-.viewimglabel::before{
-  content: "View Image";
-}
-
-.viewimglabel {
-  background:#ffab00;
-  font-size: 14px;
-  text-align: center;
-  color: #fff;
-  display: block;
-  margin: auto;
-  margin-left: 0;
-  margin-right: auto;
-  position: relative;
-  bottom: 0;
-  max-width: 100px;
-  text-decoration: none;
-  border-radius: 2px;
-  box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0 4px 0 rgba(0,0,0,.12);
-  transition: .2s cubic-bezier(.4,0,1,1)
-}
-
 a:not(.downloadbutton) {
   text-decoration: none;
   color: #ff6b6b;
@@ -183,27 +138,14 @@ a:not(.downloadbutton):hover {
   color: #ff836b;
 }
 
-.viewimglabel:hover {
-  cursor:pointer;
-	background:#ffc400 !important;
-	box-shadow:0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2) !important
-}
-
-#viewimg1:checked + label + img {
-  height: 100% !important
-}
-
-#viewimg2:checked + label + img {
-  height: 100% !important
-}
 
 h2 {
   text-align: center;
-  margin: 30px;
+  margin: 1em;
 }
 
 .box {
-  margin-bottom: 15px;
+  margin-bottom: 1em;
 }
 
 .middle {
@@ -252,26 +194,25 @@ h2 {
   background: #ff1744
 }
 
-@media (max-width:1000px) {
+@media (max-width:50em) {
   #container {
     margin: 0;
     max-width: none;
-    margin-top: 90px;
+    margin-top: 6em;
     border-radius: 0;
     position: inherit;
     box-shadow: none;
   }
   #header {
-    height: 108px;
+    height: 6em;
     position: fixed;
   }
   #header h1 {
     font-size-adjust: 0.6;
-    margin-top: 20px;
+    margin-top: 0.6em;
   }
   #bottombar {
-    height: 32px;
-    top: -6px;
+    height: 1.5em;
   }
   #footer {
     max-width: none;
@@ -283,9 +224,10 @@ h2 {
 
 @media (max-width:450px) {
   #header h1 {
+    margin-top: 0.3em;
     font-size-adjust: 0.5
   }
   #header {
-    height: 102px;
+    height: 5em;
   }
 }
