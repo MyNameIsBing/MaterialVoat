@@ -194,10 +194,7 @@ h2 {
   background: #ff1744
 }
 
-@media (max-width:768px) {
-  body {
-    font-size: 1.5em;
-  }
+@media (max-width:760px) {
   #container {
     margin: 0;
     max-width: none;
@@ -232,5 +229,8 @@ h2 {
   }
   #header {
     height: 5em;
+  }
+  #container {
+    margin-top: 5em;
   }
 }
