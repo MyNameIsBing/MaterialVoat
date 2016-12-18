@@ -194,7 +194,7 @@ h2 {
   background: #ff1744
 }
 
-@media (max-width:60em) {
+@media (min-width:760px) {
   #container {
     margin: 0;
     max-width: none;
