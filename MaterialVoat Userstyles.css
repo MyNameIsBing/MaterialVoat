@@ -150,7 +150,7 @@ body {
 	top: 0;
 	height: 60px;
 	padding-bottom: 170px;
-	background:#1e88e5;
+	background:/*[[body]]*/;
 }
 @media(max-width:870px) {
 
@@ -468,6 +468,14 @@ h1.hover.whoaversename::before {
 		padding: 16px;
 }
 
+#container > .content-no-margin  {
+	z-index: 100;
+	background:#fff !important;
+	margin-right: -5px;
+	border-radius: 2px;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+	padding: 16px;
+}
 .submission .submission {
 	margin: 0px !important;
 }
@@ -528,7 +536,7 @@ h1.hover.whoaversename::before {
 	margin-left: 32px !important;
 }
 
-.side .content {
+.side {
 	background-color:#fafafa;
 	border-width: 0px !important
 }
@@ -678,6 +686,10 @@ h1.hover.whoaversename::before {
 .contribute:hover {
 	background:/*[[accenthover]]*/ !important;
 	box-shadow:0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2)
+}
+
+.tabmenu {
+	margin-left: 13px;
 }
 
 .tabmenu a {
@@ -954,7 +966,7 @@ body #container > .well {
 
 .page-userprofile .side {
 	position: absolute;
-	margin-top:80px !important;
+	margin: 0 !important;
 	right: 0px;
 }
 
@@ -1062,6 +1074,10 @@ body #container > .well {
 	margin-right: -5px;
 }
 
+#container.page-userprofile > .content {
+	margin-right: 325px !important;
+}
+
 /*start dark theme*/
 
  .dark #sr-header-area, .dark #header-account, .dark #sr-more-link {
@@ -1079,11 +1095,11 @@ body #container > .well {
 .dark blockquote, body.dark, .dark .comment .comment,.dark .comment .comment .comment .comment,.dark .comment .comment .comment .comment .comment .comment,.dark .comment .comment .comment .comment .comment .comment .comment .comment,.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
 	background: #303030 !important;
 }
-.dark .alert-singlethread,.dark .form-horizontal #q,.dark .well.col-md-12,.dark .page-userprofile .h6 ,.dark .page-userprofile .alert-title,.dark .userstats,.dark .commenttextarea,.dark .titlebox, .dark .sidecontentbox:not(.content), .dark .sitetable:not(.nestedlisting), .dark .side .form-horizontal,.dark .comment, .dark .comment .comment .comment,.dark .comment .comment .comment .comment .comment,.dark .comment .comment .comment .comment .comment .comment .comment,.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment,.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+.dark #container > .content-no-margin, .dark .alert-singlethread,.dark .form-horizontal #q,.dark .well.col-md-12,.dark .page-userprofile .h6 ,.dark .page-userprofile .alert-title,.dark .userstats,.dark .commenttextarea,.dark .titlebox, .dark .sidecontentbox:not(.content), .dark .sitetable:not(.nestedlisting), .dark .side .form-horizontal,.dark .comment, .dark .comment .comment .comment,.dark .comment .comment .comment .comment .comment,.dark .comment .comment .comment .comment .comment .comment .comment,.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment,.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
 	background: #424242 !important;
 }
 
-.dark .md p, .dark .link a.title.may-blank, body.dark, .footer:not(.titlebox):before, .dark .bottommenu, .dark .page-userprofile .alert-title, .dark .userstats-heading-1, .dark .userstats-heading-2 {
+.dark .alert-title, .dark .md p, .dark .link a.title.may-blank, body.dark, .footer:not(.titlebox):before, .dark .bottommenu, .dark .page-userprofile .alert-title, .dark .userstats-heading-1, .dark .userstats-heading-2 {
 	color: #fff !important;
 }
 
